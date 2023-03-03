@@ -4,11 +4,17 @@ function LayoutEffectTutorial() {
   const inputRef = useRef(null);
 
   useLayoutEffect(() => {
-    console.log(inputRef.current.value);
+    setTimeout(() => {
+      console.log("useLayoutEffect");
+    }, 0);
+    
   }, []);
 
   useEffect(() => {
-    inputRef.current.value = "HELLO";
+    setTimeout(() => {
+      console.log("useEffect");
+    }, 0);
+    
   }, []);
 
   return (

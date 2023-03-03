@@ -7,7 +7,7 @@ function EffectTutorial() {
 
   useEffect(() => {
     axios
-      .get("https://jsonplaceholder.typicode.com/comments")
+      .get("https://rapidprod-sendgrid-v1.p.rapidapi.com/alerts")
       .then((response) => {
         setData(response.data[0].email);
         console.log("API WAS CALLED");

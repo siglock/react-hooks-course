@@ -9,7 +9,7 @@ const reducer = (state, action) => {
     default:
       return state;
   }
-};
+}
 
 const ReducerTutorial = () => {
   const [state, dispatch] = useReducer(reducer, { count: 0, showText: true });
